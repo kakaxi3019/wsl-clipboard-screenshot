@@ -25,10 +25,38 @@
 
 ## 安装
 
+**方式一：一键安装**（推荐）
+
 在 **WSL 终端** 中执行：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/master/scripts/install.sh | bash
+```
+
+**方式二：直接下载二进制**
+
+在 **WSL 终端** 中执行：
+
+```bash
+curl -L https://github.com/kakaxi3019/wsl-clipboard-screenshot/releases/download/v0.1.0/wsl-clipboard-screenshot_0.1.0_linux_amd64.tar.gz -o wsl-clipboard-screenshot.tar.gz
+tar -xzf wsl-clipboard-screenshot.tar.gz
+mv wsl-clipboard-screenshot ~/.local/bin/
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+wsl-clipboard-screenshot start --daemon
+```
+
+**方式三：从源码编译**
+
+```bash
+git clone https://github.com/kakaxi3019/wsl-clipboard-screenshot.git
+cd wsl-clipboard-screenshot
+go build -o wsl-clipboard-screenshot .
+mkdir -p ~/.local/bin
+mv wsl-clipboard-screenshot ~/.local/bin/
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+wsl-clipboard-screenshot start --daemon
 ```
 
 ## 快速开始
