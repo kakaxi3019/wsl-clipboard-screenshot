@@ -1,0 +1,28 @@
+# Build output
+wsl-clipboard-screenshot
+*.exe
+
+# Go
+/vendor/
+*.test
+coverage.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temp
+*.tmp
+*.bak
+
+# Claude
+.claude/settings.local.json
