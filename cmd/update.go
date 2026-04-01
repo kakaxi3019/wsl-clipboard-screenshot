@@ -32,7 +32,7 @@ var updateCmd = &cobra.Command{
 		fmt.Printf("Updating from %s to %s...\n", currentVersion, latest)
 
 		// Download and run install script
-		installURL := fmt.Sprintf("https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/main/scripts/install.sh")
+		installURL := fmt.Sprintf("https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/master/scripts/install.sh")
 		downloadCmd := fmt.Sprintf(`curl -fsSL "%s" | bash -s -- --version %s`, installURL, latest)
 
 		runCmd := exec.Command("sh", "-c", downloadCmd)

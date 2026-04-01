@@ -28,7 +28,7 @@
 在 **WSL 终端** 中执行：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/master/scripts/install.sh | bash
 ```
 
 ## 快速开始

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Install script for wsl-clipboard-screenshot
-# Usage: curl -fsSL https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/main/scripts/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/kakaxi3019/wsl-clipboard-screenshot/master/scripts/install.sh | bash
 
 REPO="kakaxi3019/wsl-clipboard-screenshot"
 BINARY="wsl-clipboard-screenshot"
